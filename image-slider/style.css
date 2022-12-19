@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  min-width: 100vw;
+}
+
+.arrow {
+  font-size: 2.5rem;
+  color: rgb(166, 166, 166);
+}
+
+.arrow:hover {
+  color: rgb(136, 136, 136);
+  transform: scale(1.2);
+}
+
+.left-arrow {
+  margin-right: 1rem;
+}
+
+.right-arrow {
+  margin-left: 1rem;
+}
+
+.container {
+  height: 100%;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+  /* background-color: red; */
+}
+
+.left-arrow {
+  width: 15vw;
+  text-align: center;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  text-transform: uppercase;
+  position: absolute;
+  color: rgb(55, 55, 55);
+  top: 4%;
+  left: 50% -50%;
+  letter-spacing: 1px;
+}
+
+.image-container {
+  height: 70vh;
+  width: 60vw;
+}
+
+.images {
+  position: absolute;
+  height: 70vh;
+  width: 60vw;
+  box-shadow: 0px 2px 6px 1px rgb(139, 139, 139);
+  top: 14%;
+  opacity: 1;
+}
+
+.image {
+  position: absolute;
+  height: 70vh;
+  width: 60vw;
+  opacity: 1;
+}
+
+.img-circles {
+  display: flex;
+  gap: 1rem;
+  padding-top: 7rem;
+}
+
+.circle {
+  text-decoration: none;
+  border: 1px solid black;
+  background: rgb(245, 245, 245);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.right-arrow {
+  width: 15vw;
+  text-align: center;
+}
+
+/* added classes js */
+
+.fill {
+  background: #000;
+}
+
+.hidden-img {
+  opacity: 0;
+  transition: 700ms opacity ease-in-out;
+  /* display: none; */
+}
